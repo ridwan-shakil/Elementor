@@ -1,0 +1,31 @@
+1. create a scroll to top button and give it a class " scrolltop "
+
+2. Get the HTML widget and pest the below code to hide "scroll to top button" when it is in the top 
+
+
+<!----------------- CSS -------------->
+<style>
+  .scrolltop{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+body.show .scrolltop{
+    opacity: 1;
+}
+    
+</style>
+
+<!-------------javascript ------------->
+<!--You can replace offset value from here-->
+
+<script>
+var offset = 400
+$(window).on('load scroll', function(){
+    
+    if( $(window).scrollTop() > offset ){
+        $('body').addClass('show')
+    }else{
+        $('body').removeClass('show')
+    }
+})
+</script>
