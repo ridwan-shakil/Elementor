@@ -1,7 +1,7 @@
 1. First generate your effect from this site = https://vincentgarreau.com/particles.js/
 2. you can change it's settings
-3. Open in codepen , copy only JS
-4. take a HTML widget and pest below code, then pest JS code inside the below code 
+3. Open in codepen, copy only JS
+4. take an HTML widget and pest the below code, then pest JS code inside the below code 
 5. copy the id from js (from the first line, maybe "particles-js" ) & set that id to the section in which you want to show the effect
 
 
@@ -10,7 +10,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     left:0;
 }
