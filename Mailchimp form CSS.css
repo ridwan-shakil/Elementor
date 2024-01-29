@@ -1,0 +1,58 @@
+/* Mailchimp form design  start */
+.mc4wp-form-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mc4wp-form-fields input[type="email"] {
+	border: none;
+    border-radius: 50px 0px 0px 50px;
+	font-size: 20px;
+	padding: 10px 30px 10px 20px;
+    
+}
+
+.mc4wp-form-fields input[type="submit"] {
+    border-radius: 0 50px 50px 0;
+    border: 0px;
+    color: white;
+    background: #03BD62;
+		font-size:20px;
+    padding: 10px 30px;
+}
+
+.mc4wp-form input[type="email"]:focus {
+    outline: none;
+    border-color: initial;
+}
+.mc4wp-form input[type="submit"]:focus {
+    outline: none;
+    border-color: initial;
+}
+
+.mc4wp-alert.mc4wp-success {
+    color: white;
+    background: #0008ff;
+    padding: 20px;
+    border-left: 10px solid #00dd1f;
+}
+
+/* responsive for mobile  */
+
+@media only screen and (max-width: 880px) {
+
+	.mc4wp-form-fields input[type="email"] {
+		padding: 8px 20px 8px 10px;
+		font-size: 16px;
+	}
+	
+	
+	.mc4wp-form-fields input[type="submit"] {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	
+	
+}
+/* Mailchimp form end  */
