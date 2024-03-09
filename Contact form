@@ -21,12 +21,21 @@ custom code
 ==========================
 Contact form not sending email/ Email going to spam :
 ==========================
+default phy mail system may work but it will go into the spam folder
+So we have to use a dedicated Email-sending system 
+Most of the hosting provides a "Business Email" creation option and lets you send emails 
+But if your hosting doesn't provide that 
+You have to use a SMTP Mailer
+Zoohoo provides it at a cheap price 
+ "Brevo" lets you send 300 emails per day for free!!!
+
+----------------------
+Free solution = Brevo SMTP server setup
+----------------------
 WP Form -> SMTP -> setup SMTP
 
-Select Brevo 
-( Free for up to 300 emails per day. It also has a wide variety 
-of paid plans with higher monthly limits. you won’t have to enter
-a credit card to complete the setup process )
+Select "Brevo" server 
+
 
 ==========================
 Show form entries in the admin panel & show entries on any page
