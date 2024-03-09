@@ -1,14 +1,15 @@
 ==========================
-Create contact form :
+Create a contact form :
 ==========================
-Wp Form =        5M+  , Limited field, lots of templates , Easy to use
+1) Wp Form =        5M+, lots of templates, Easy to use,   ( Limited field, don't show entries on admin)
 
 
-Ninja Form =     1M-  , more field ,   No templates , Easy to use , Emails shows on admin panel
+2) Ninja Form =     1M-, Easy to use, Emails show on admin panel, more fields,  ( No templates, )  
 
 
-Contact form 7 = 5M+  , More field ,   NO templates , Hard to use
+3) Contact form 7 = 5M+, More field, ( NO templates, Hard to use, Opensource )
 
+4) Formidable Form, Gravity form =   ( Complex, premium, suitable for Pros )
 
 ==========================
 Design contact form :
