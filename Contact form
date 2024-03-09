@@ -36,6 +36,8 @@ WP Form -> SMTP -> setup SMTP- > Select "Brevo" server
 brevo.com -> create an account -> top right corner click -> SMTP & API -> API key -> create an API key -> Copy the key 
 pest the API key in your admin panel -> smtp-> API key
 
+it may take some time to work properly
+
 ==========================
 Show form entries in the admin panel & show entries on any page
 ==========================
