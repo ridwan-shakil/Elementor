@@ -1,0 +1,13 @@
+🔹 6. Simple Rule to Remember
+
+👉 If it should scale → use rem
+👉 If it should stay fixed → use px
+👉 If it depends on parent → use %
+👉 If it depends on screen → use vw/vh
+
+✅ Use this combo:
+Typography → rem
+Spacing → rem
+Layout widths → %
+Hero scaling → vw + clamp()
+Small UI → px
