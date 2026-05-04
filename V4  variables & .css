@@ -1,0 +1,209 @@
+/* ========================================
+   1. ROOT VARIABLES (DESIGN TOKENS)
+======================================== */
+
+:root {
+
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-secondary: #1e293b;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-bg: #ffffff;
+  --color-surface: #f9fafb;
+  --color-border: #e5e7eb;
+
+  /* Fluid Typography */
+  --text-sm: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
+  --text-md: clamp(1rem, 0.95rem + 0.3vw, 1.1rem);
+  --text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+
+  --heading-md: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+  --heading-lg: clamp(2.2rem, 1.6rem + 2.5vw, 3.5rem);
+  --heading-xl: clamp(2.8rem, 2rem + 3.5vw, 4.5rem);
+
+  /* Fluid Spacing */
+  --space-1: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
+  --space-2: clamp(1rem, 0.8rem + 0.5vw, 1.5rem);
+  --space-3: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --space-4: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --space-5: clamp(3rem, 2rem + 3vw, 4rem);
+
+  /* Layout */
+  --container-width: 1200px;
+}
+
+/* ========================================
+   2. BASE RESET (LIGHT)
+======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* ========================================
+   3. LAYOUT SYSTEM
+======================================== */
+
+/* Section (vertical spacing) */
+.section {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+/* Width wrapper */
+.wrap {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+/* ========================================
+   4. FLEX SYSTEM
+======================================== */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Your main pattern */
+.flex-row {
+  flex-direction: row;
+}
+
+/* Override (your naming choice) */
+.flex-row-mobile {
+  /* desktop stays row */
+}
+
+/* Alignment */
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+
+/* Gap */
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+
+/* ========================================
+   5. RESPONSIVE BEHAVIOR (MINIMAL)
+======================================== */
+
+@media (max-width: 768px) {
+
+  /* Default: stack */
+  .flex-row {
+    flex-direction: column;
+  }
+
+  /* Override: keep row */
+  .flex-row-mobile {
+    flex-direction: row;
+  }
+
+}
+
+/* ========================================
+   6. GRID (AUTO RESPONSIVE)
+======================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-3);
+}
+
+/* ========================================
+   7. TYPOGRAPHY
+======================================== */
+
+.text-sm { font-size: var(--text-sm); }
+.text-md { font-size: var(--text-md); }
+.text-lg { font-size: var(--text-lg); }
+
+.heading-md {
+  font-size: var(--heading-md);
+  font-weight: 600;
+}
+
+.heading-lg {
+  font-size: var(--heading-lg);
+  font-weight: 700;
+}
+
+.heading-xl {
+  font-size: var(--heading-xl);
+  font-weight: 700;
+}
+
+.text-muted { color: var(--color-muted); }
+.text-center { text-align: center; }
+
+/* ========================================
+   8. COMPONENTS
+======================================== */
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-md);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+/* Card */
+.card {
+  background: var(--color-surface);
+  padding: var(--space-3);
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+}
+
+/* ========================================
+   9. UTILITIES
+======================================== */
+
+/* Limit text width */
+.text-limit {
+  max-width: 60ch;
+}
+
+/* Center everything */
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
