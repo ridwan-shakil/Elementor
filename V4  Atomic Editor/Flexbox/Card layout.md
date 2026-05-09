@@ -18,50 +18,50 @@ Automatically wraps when needed
 Grows evenly in available space
 Responsive Thinking
 
-DON'T think:
+### DON'T think:
 
   3 columns desktop
   2 columns tablet
   1 column mobile
 
-THINK:
+### THINK:
 
 "What is the minimum safe width for this card?"
-
 Let Flexbox handle the layout automatically.
 
 Fast Building Workflow
-Step 1
 
-Build structure only:
+### Step 1
 
-containers
-direction
-wrap
-gap
-alignment
+  Build structure only:
+  
+    containers
+    direction
+    wrap
+    gap
+    alignment
+  
+  NO styling yet.
 
-NO styling yet.
-
-Step 2
+### Step 2
 
 Check responsiveness early.
 
-Step 3
+### Step 3
 
 Apply utility classes/components.
 
-Step 4
+### Step 4
 
 Add styling and polish.
 
-Golden Rules
-Use gap instead of margins
-Avoid unnecessary nesting
-Use nested containers logically
-Let flexbox solve layouts naturally
-If layout feels difficult, structure is probably wrong
-Atomic Editor Best Practices
+#### Golden Rules:
+    Use gap instead of margins
+    Avoid unnecessary nesting
+    Use nested containers logically
+    Let flexbox solve layouts naturally
+    If layout feels difficult, structure is probably wrong
+    Atomic Editor Best Practices
 
 Use:
 
