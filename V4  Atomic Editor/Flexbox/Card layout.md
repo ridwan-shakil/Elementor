@@ -9,6 +9,7 @@
 ```css
 flex-grow: 1;
 flex-basis: 300px;
+```
 
 Meaning:
 
@@ -19,9 +20,9 @@ Responsive Thinking
 
 DON'T think:
 
-3 columns desktop
-2 columns tablet
-1 column mobile
+  3 columns desktop
+  2 columns tablet
+  1 column mobile
 
 THINK:
 
