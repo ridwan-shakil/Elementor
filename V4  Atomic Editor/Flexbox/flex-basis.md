@@ -16,6 +16,9 @@ These are only reference ranges.
 
 Always choose the smallest width where the design still looks visually safe and comfortable.
 
+## Put the smallest value from where design starts breaking , so responsiveess can start here 
+flex-basis is not min-width , it's the preffered width meaning it will take atleast that much space but it can srink in smaller mobile screens to prevent overflow   
+
 ---
 
 # Professional Workflow
