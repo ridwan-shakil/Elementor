@@ -135,7 +135,7 @@ which may cause:
 
 # Recommended Professional Method
 
-Use proportional grow ratios.
+Use proportional grow ratios instead.
 
 Example:
 
@@ -146,17 +146,19 @@ Example:
 }
 
 .left{
-   flex:1.7;
+   flex-grow:2;
+   flex-basis:0;
 }
 
 .right{
-   flex:1;
+   flex-grow:1;
+   flex-basis:0;
 }
 ```
 
 Approx result:
-- Left ≈ 63%
-- Right ≈ 37%
+- Left ≈ 66%
+- Right ≈ 33%
 
 WITHOUT manual calculations.
 
@@ -176,6 +178,39 @@ Benefits:
 
 ---
 
+# Elementor Important Note
+
+Elementor usually supports only whole-number grow values like:
+
+```text
+1, 2, 3, 4, 5...
+```
+
+So instead of exact decimal ratios like:
+
+```text
+1.7 / 1
+```
+
+use approximate whole-number ratios.
+
+---
+
+# Recommended Ratio Equivalents
+
+| Visual Layout | Recommended Grow Ratio |
+|---|---|
+| 50 / 50 | 1 / 1 |
+| 60 / 40 | 3 / 2 |
+| 63 / 37 | 2 / 1 |
+| 66 / 33 | 2 / 1 |
+| 70 / 30 | 7 / 3 |
+| 75 / 25 | 3 / 1 |
+
+These are visually very close in real designs.
+
+---
+
 # Recommended Elementor Setup
 
 ## Wrapper
@@ -188,7 +223,7 @@ Benefits:
 ## Left Container
 
 ```text
-Grow: 1.7
+Grow: 2
 Shrink: 1
 Basis: 0
 ```
@@ -318,5 +353,3 @@ grow ratios + nowrap
 | Feature Cards | auto-wrap cards |
 | Editorial Layouts | proportional grow |
 | Dashboard Widgets | auto-wrap cards |
-
-```
