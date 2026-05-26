@@ -1,11 +1,24 @@
 /* =========================================================
    PERSONAL FRONTEND BOILERPLATE
    Lightweight reusable CSS foundation
+
    Optimized for:
    - HTML/CSS projects
    - WordPress/Elementor workflows
    - Fast frontend development
-  Prefixing added to avoid conflicts : ( l- layout, u- utility, c- components)
+
+   Prefixes:
+   - l- = Layout
+   - u- = Utility
+   - c- = Component
+
+   PROJECT CUSTOMIZATION
+   Modify these variables for each new project:
+   - Brand colors
+   - Fonts
+   - Container width
+   - Border radius
+   - Shadows
 ========================================================= */
 
 
@@ -85,6 +98,19 @@
 }
 
 
+.dark-mode {
+
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+
+  --color-text: #f3f4f6;
+  --color-text-muted: #9ca3af;
+
+  --color-border: #374151;
+
+}
+
+
 /* =========================================================
    2. RESET
 ========================================================= */
@@ -107,6 +133,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 img,
@@ -297,6 +325,25 @@ ol {
   color: var(--color-text-muted);
 }
 
+/* =========================================================
+   BACKGROUND UTILITIES
+========================================================= */
+
+.u-bg-primary {
+  background-color: var(--color-primary);
+}
+
+.u-bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.u-bg-surface {
+  background-color: var(--color-surface);
+}
+
+.u-bg-white {
+  background-color: #fff;
+}
 
 /* =========================================================
    9. COMPONENTS
